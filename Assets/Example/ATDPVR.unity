@@ -1892,7 +1892,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   DpvrTrackingSpace: {fileID: 565938021}
-  MinimalAQualityToAlign: 0.015
+  MinimalAQualityToAlign: 0.05
 --- !u!1 &1103160045
 GameObject:
   m_ObjectHideFlags: 0

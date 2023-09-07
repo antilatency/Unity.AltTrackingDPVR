@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class AltTrackingDPVR : AltTracking
 {
     public Transform DpvrTrackingSpace;
-    public float MinimalAQualityToAlign = 0.01f;
+    public float MinimalAQualityToAlign = 0.065f;
 
     private Transform _bSpace;
     private Transform _b;
@@ -116,8 +116,6 @@ public class AltTrackingDPVR : AltTracking
 
         if (!GetRawTrackingState(out State rawTrackingState))
         {
-            _bSpace.localRotation = Quaternion.identity;
-            _bSpace.localPosition = Vector3.zero;
             return;
         }
 
@@ -138,7 +136,6 @@ public class AltTrackingDPVR : AltTracking
 
         if (!GetTrackingState(out State trackingState))
         {
-            _bSpace.localPosition = Vector3.zero;
             return;
         }
 
