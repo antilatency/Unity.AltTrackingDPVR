@@ -2,7 +2,6 @@ using Antilatency.Alt.Tracking;
 using Antilatency.DeviceNetwork;
 using Antilatency.SDK;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class AltTrackingDPVR : AltTracking
 {
